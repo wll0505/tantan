@@ -1,6 +1,6 @@
 #!/bin/sh
 Y_M_D_1D=`date -d "$1 1 day ago" +%Y-%m-%d` 
-test
+
 hive<<EOF
 set hive.execution.engine=MR;
 create table if not exists data_analytics.boost_pay_acc_d
